@@ -10,7 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Trigris_Android">
         <activity
-            android:name=".MainActivity"
+            android:name=".feature.register.ui.RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".feature.login.ui.LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.saehyun.trigris_android.feature.main.ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
