@@ -10,7 +10,7 @@ import retrofit2.http.PUT
 interface RegisterApi {
 
     // register
-    @POST("student")
+    @POST("user")
     fun register(
         @Body registerRequest: RegisterRequest
     ) : Single<Response<Void>>

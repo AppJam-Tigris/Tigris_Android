@@ -9,7 +9,7 @@ import retrofit2.http.POST
 
 interface LoginApi {
 
-    @POST("student/auth")
+    @POST("user/auth")
     fun login(
         @Body loginRequest: LoginRequest
     ) : Single<Response<LoginResponse>>
