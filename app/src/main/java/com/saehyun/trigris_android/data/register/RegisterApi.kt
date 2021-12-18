@@ -17,7 +17,7 @@ interface RegisterApi {
     ) : Single<Response<Void>>
 
     // 전화번호 인증번호 발송
-    @POST("user/home")
+    @POST("user/phone")
     fun phoneCheck(
         @Body phoneCheckRequest: PhoneCheckRequest
     ) : Single<Response<Void>>
