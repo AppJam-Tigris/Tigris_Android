@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Trigris_Android"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".feature.document.DocumentActivity"
+            android:exported="false" />
+        <activity
             android:name=".feature.reserve.ReserveActivity"
             android:exported="false" />
         <activity
