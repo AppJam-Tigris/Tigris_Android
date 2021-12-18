@@ -1,12 +1,14 @@
 package com.saehyun.trigris_android.feature.main.ui
 
 import SEOUL_MAP_URL
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.webkit.WebViewClient
 import com.example.nms_android_v1.base.BaseActivity
 import com.saehyun.trigris_android.R
 import com.saehyun.trigris_android.databinding.ActivityMainBinding
+import com.saehyun.trigris_android.feature.find.FindActivity
 
 class MainActivity : BaseActivity<ActivityMainBinding> (
     R.layout.activity_main
@@ -15,10 +17,17 @@ class MainActivity : BaseActivity<ActivityMainBinding> (
         super.onCreate(savedInstanceState)
 
         webView()
+
+        binding.tvFind.setOnClickListener {
+            startFind()
+        }
     }
 
     override fun observeEvent() {}
 
+    private fun startFind() {
+        startActivity(Intent(applicationContext, FindActivity::class.java))
+    }
     private fun webView() {
         binding.mapView.run {
             setWebViewClient(WebViewClient())
