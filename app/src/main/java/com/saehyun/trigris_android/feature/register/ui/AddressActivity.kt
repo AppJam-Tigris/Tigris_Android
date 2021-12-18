@@ -38,7 +38,7 @@ class AddressActivity : AppCompatActivity() {
                 webView.loadUrl("javascript:execKakaoPostcode();")
             }
         }
-        
+
         webView.loadUrl(DAUM_URL)
     }
 

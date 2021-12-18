@@ -21,7 +21,7 @@ class RegisterRepository {
             .subscribeOn(Schedulers.io())
 
     // 전화번호 인증번호 발송
-    fun register(phoneCheckRequest: PhoneCheckRequest) : @NonNull Single<Response<Void>> =
+    fun phoneCheck(phoneCheckRequest: PhoneCheckRequest) : @NonNull Single<Response<Void>> =
         registerApi.phoneCheck(phoneCheckRequest)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribeOn(Schedulers.io())
