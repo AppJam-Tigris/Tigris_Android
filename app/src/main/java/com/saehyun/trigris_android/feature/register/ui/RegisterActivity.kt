@@ -254,7 +254,7 @@ class RegisterActivity : BaseActivity<ActivityRegisterBinding> (
         }
 
         binding.btnRegisterThird.setOnClickListener {
-            code = binding.btnRegisterThird.text.toString()
+            code = binding.etRegisterThird.text.toString()
             if(!(phone_number.isNullOrEmpty() || code.isNullOrEmpty())) {
                 register()
             }
