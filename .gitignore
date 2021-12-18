@@ -13,3 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+app/src/main/java/com/saehyun/trigris_android/data/Constans.kt
