@@ -1,6 +1,7 @@
 package com.saehyun.trigris_android.di
 
 import android.app.Application
+import com.saehyun.trigris_android.di.module.findModule
 import com.saehyun.trigris_android.di.module.loginModule
 import com.saehyun.trigris_android.di.module.registerModule
 import org.koin.android.ext.koin.androidContext
@@ -16,7 +17,8 @@ class Container: Application() {
             modules(
                 listOf(
                     loginModule,
-                    registerModule
+                    registerModule,
+                    findModule
                 )
             )
         }

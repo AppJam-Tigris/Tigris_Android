@@ -1,6 +1,7 @@
 package com.example.nms_android_v1.di
 
 import BASE_URL
+import com.saehyun.trigris_android.data.find.FindApi
 import com.saehyun.trigris_android.data.login.LoginApi
 import com.saehyun.trigris_android.data.main.MainApi
 import com.saehyun.trigris_android.data.register.RegisterApi
@@ -24,4 +25,8 @@ val registerApi : RegisterApi by lazy {
 
 val mainApi : MainApi by lazy {
     retrofit.create(MainApi::class.java)
+}
+
+val findApi : FindApi by lazy {
+    retrofit.create(FindApi::class.java)
 }
