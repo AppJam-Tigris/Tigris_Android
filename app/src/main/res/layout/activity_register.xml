@@ -65,12 +65,63 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/stextView2" />
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/spinner_gender"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etRegisterFirst">
+
+            <Spinner
+                android:id="@+id/btnGender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/local"
+                android:textSize="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.615" />
+
+            <TextView
+                android:id="@+id/tvSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/noto_sans_kr_regular"
+                android:text="Gender(성별)"
+                android:textColor="#707070"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0" />
+
+            <View
+                android:id="@+id/vSpinner"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="#707070"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
         <EditText
-            android:id="@+id/etetRegisterThird"
+            android:id="@+id/etRegisterThird"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="76dp"
             android:layout_marginEnd="36dp"
             android:fontFamily="@font/noto_sans_kr_regular"
             android:hint="Email"
@@ -80,10 +131,11 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etetRegisterSecond" />
+            app:layout_constraintTop_toBottomOf="@+id/etRegisterFirst" />
 
         <EditText
-            android:id="@+id/etetRegisterSecond"
+            android:visibility="gone"
+            android:id="@+id/etRegisterSecond"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
@@ -97,10 +149,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etRegisterFIrst" />
+            app:layout_constraintTop_toBottomOf="@+id/etRegisterFirst" />
 
         <EditText
-            android:id="@+id/etRegisterFIrst"
+            android:id="@+id/etRegisterFirst"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="36dp"
@@ -132,10 +184,10 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etetRegisterThird" />
+            app:layout_constraintTop_toBottomOf="@+id/etRegisterThird" />
 
         <ImageView
-            android:id="@+id/simageView2"
+            android:id="@+id/ivSeeSecond"
             android:layout_width="24dp"
             android:layout_height="24dp"
             android:layout_marginEnd="16dp"
@@ -145,18 +197,28 @@
             app:srcCompat="@drawable/iv_see" />
 
 
+        <ImageView
+            android:id="@+id/ivSeeFirst"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etRegisterThird"
+            app:layout_constraintEnd_toEndOf="@+id/etRegisterThird"
+            app:layout_constraintTop_toTopOf="@+id/etRegisterThird"
+            app:srcCompat="@drawable/iv_see" />
+
         <View
             android:id="@+id/sview2"
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="35dp"
+            android:layout_marginTop="68dp"
             android:layout_marginEnd="35dp"
-            android:layout_marginBottom="152dp"
             android:background="@drawable/bg_register_btn_border"
-            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etRegisterFourth" />
 
         <TextView
             android:id="@+id/stvRegister"
@@ -170,6 +232,81 @@
             android:textSize="14dp"
             app:layout_constraintBottom_toBottomOf="@+id/sview2"
             app:layout_constraintEnd_toEndOf="@+id/sview2" />
+
+        <TextView
+            android:id="@+id/btnRegisterSecond"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_btn_stoke_border"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="인증 하기"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/etRegisterSecond"
+            app:layout_constraintEnd_toEndOf="@+id/etRegisterSecond"
+            app:layout_constraintTop_toTopOf="@+id/etRegisterSecond"
+            app:layout_constraintVertical_bias="0.484" />
+
+        <TextView
+            android:id="@+id/btnRegisterFourth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_btn_stoke_border"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="인증 하기"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/etRegisterFourth"
+            app:layout_constraintEnd_toEndOf="@+id/etRegisterFourth"
+            app:layout_constraintTop_toTopOf="@+id/etRegisterFourth"
+            app:layout_constraintVertical_bias="0.484" />
+
+        <TextView
+            android:id="@+id/btnRegisterThird"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:background="@drawable/bg_btn_stoke_border"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:text="인증 하기"
+            android:textColor="@color/black"
+            android:textSize="8dp"
+            android:textStyle="normal"
+            app:layout_constraintBottom_toBottomOf="@+id/etRegisterThird"
+            app:layout_constraintEnd_toEndOf="@+id/etRegisterThird"
+            app:layout_constraintTop_toTopOf="@+id/etRegisterThird"
+            app:layout_constraintVertical_bias="0.515" />
+
+        <ImageView
+            android:id="@+id/btnLocal"
+            android:layout_width="48dp"
+            android:layout_height="14dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etRegisterThird"
+            app:layout_constraintEnd_toEndOf="@+id/etRegisterThird"
+            app:layout_constraintTop_toTopOf="@+id/etRegisterThird"
+            app:srcCompat="@drawable/btn_local" />
+
+        <ImageView
+            android:id="@+id/btnRegisterFirst"
+            android:layout_width="48dp"
+            android:layout_height="12dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etRegisterFirst"
+            app:layout_constraintEnd_toEndOf="@+id/etRegisterFirst"
+            app:layout_constraintTop_toTopOf="@+id/etRegisterFirst"
+            app:srcCompat="@drawable/ic_post_number" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
