@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.saehyun.trigris_android">
 
+    <uses-permission android:name="android.permission.INTERNET"/>
+
     <application
+        android:usesCleartextTraffic="true"
+        android:name=".di.Container"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -28,5 +32,4 @@
             android:name=".feature.main.ui.MainActivity"
             android:exported="false"/>
     </application>
-
 </manifest>
