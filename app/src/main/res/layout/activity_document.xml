@@ -175,7 +175,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:background="@drawable/bg_document_stoke_border"
+                android:background="@drawable/bg_finish_stoke_border"
                 android:fontFamily="@font/noto_sans_kr_medium"
                 android:paddingLeft="24dp"
                 android:paddingTop="3dp"
@@ -276,7 +276,7 @@
                 android:layout_gravity="center"
                 android:layout_marginTop="36dp"
                 android:fontFamily="@font/noto_sans_kr_medium"
-                android:text="검사 사유"
+                android:text="국적"
                 android:textColor="@color/black"
                 android:textSize="16dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -331,7 +331,7 @@
                 android:layout_marginStart="44dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/bg_document_stoke_border"
-                android:hint="앞자리"
+                android:hint="050109"
                 android:paddingLeft="20dp"
                 android:textStyle="normal"
                 app:layout_constraintStart_toStartOf="parent"
@@ -351,6 +351,7 @@
 
 
             <EditText
+                android:text="임세현"
                 android:layout_width="0dp"
                 android:layout_height="34dp"
                 android:layout_marginStart="25dp"
@@ -379,22 +380,23 @@
                 android:layout_width="150dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="12dp"
-                android:background="@drawable/bg_document_stoke_border"
+                android:background="@drawable/bg_finish_stoke_border"
                 android:gravity="center"
                 android:text="남"
                 android:textSize="13dp"
                 app:layout_constraintEnd_toStartOf="@+id/textView25"
                 app:layout_constraintTop_toBottomOf="@+id/textView25" />
 
+
             <TextView
                 android:id="@+id/textView27"
                 android:layout_width="150dp"
                 android:layout_height="34dp"
-                android:layout_marginStart="36dp"
+                android:layout_marginStart="32dp"
                 android:layout_marginTop="24dp"
                 android:background="@drawable/bg_document_stoke_border"
                 android:gravity="center"
-                android:text="남"
+                android:text="외국인"
                 android:textSize="13dp"
                 app:layout_constraintStart_toStartOf="@+id/ab"
                 app:layout_constraintTop_toBottomOf="@+id/ab" />
@@ -403,16 +405,16 @@
                 android:layout_width="150dp"
                 android:layout_height="34dp"
                 android:layout_marginTop="24dp"
-                android:layout_marginEnd="48dp"
-                android:background="@drawable/bg_document_stoke_border"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/bg_finish_stoke_border"
                 android:gravity="center"
-                android:text="남"
+                android:text="내국인"
                 android:textSize="13dp"
                 app:layout_constraintEnd_toEndOf="@+id/ab"
                 app:layout_constraintTop_toBottomOf="@+id/ab" />
 
-
             <TextView
+                android:text="안드로이드 개발자"
                 android:id="@+id/textView29"
                 android:layout_width="0dp"
                 android:layout_height="34dp"
@@ -427,6 +429,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView28" />
 
             <TextView
+                android:text="대덕소프트웨어마이스터고등학교"
                 android:id="@+id/textView34"
                 android:layout_width="0dp"
                 android:layout_height="34dp"
@@ -441,6 +444,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView30" />
 
             <TextView
+                android:text="대전광역시 서구 장동 23-9"
                 android:id="@+id/textView30"
                 android:layout_width="0dp"
                 android:layout_height="34dp"
@@ -468,6 +472,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
             <TextView
+                android:text="14559"
                 android:id="@+id/textView33"
                 android:layout_width="0dp"
                 android:layout_height="34dp"
@@ -502,7 +507,7 @@
                 android:layout_height="40dp"
                 android:fontFamily="@font/noto_sans_kr_medium"
                 android:gravity="center"
-                android:text="다음"
+                android:text="예약 하기"
                 android:textColor="#FFFFFF"
                 android:textSize="14dp"
                 app:layout_constraintEnd_toEndOf="@+id/sview3"
