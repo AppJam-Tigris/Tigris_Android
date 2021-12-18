@@ -6,7 +6,6 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.saehyun.trigris_android.data.login.LoginRepository
 import com.saehyun.trigris_android.feature.login.model.LoginRequest
-import org.koin.core.Koin
 
 class LoginViewModel(
     private val rp: LoginRepository
