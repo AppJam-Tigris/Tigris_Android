@@ -7,7 +7,6 @@ import com.saehyun.trigris_android.data.register.RegisterApi
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
-import retrofit2.create
 
 private val retrofit: Retrofit = Retrofit.Builder().apply {
     baseUrl(BASE_URL)
@@ -15,7 +14,7 @@ private val retrofit: Retrofit = Retrofit.Builder().apply {
     addConverterFactory(GsonConverterFactory.create())
 }.build()
 
-val loginApi : LoginApi by lazy {
+val LOGIN_API : LoginApi by lazy {
     retrofit.create(LoginApi::class.java)
 }
 

@@ -20,7 +20,6 @@ class LoginActivity : BaseActivity<ActivityLoginBinding> (
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_login)
 
         binding.tvLogin.setOnClickListener {
             login()
@@ -29,6 +28,7 @@ class LoginActivity : BaseActivity<ActivityLoginBinding> (
         binding.tvRegister.setOnClickListener {
             register()
         }
+
 
     }
 
@@ -48,10 +48,10 @@ class LoginActivity : BaseActivity<ActivityLoginBinding> (
     }
 
     private fun startMain() {
-        startActivity(Intent(this, MainActivity::class.java))
+        startActivity(Intent(applicationContext, MainActivity::class.java))
     }
 
     private fun register() {
-        startActivity(Intent(this, RegisterActivity::class.java))
+        startActivity(Intent(applicationContext, RegisterActivity::class.java))
     }
 }

@@ -1,6 +1,6 @@
 package com.saehyun.trigris_android.data.login
 
-import com.example.nms_android_v1.di.loginApi
+import com.example.nms_android_v1.di.LOGIN_API
 import com.saehyun.trigris_android.feature.login.model.LoginRequest
 import com.saehyun.trigris_android.feature.login.model.LoginResponse
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
@@ -12,7 +12,7 @@ import retrofit2.Response
 class LoginRepository {
 
     fun login(loginRequest: LoginRequest) : @NonNull Single<Response<LoginResponse>> =
-        loginApi.login(loginRequest)
+        LOGIN_API.login(loginRequest)
             .observeOn(AndroidSchedulers.mainThread())
             .subscribeOn(Schedulers.io())
 
