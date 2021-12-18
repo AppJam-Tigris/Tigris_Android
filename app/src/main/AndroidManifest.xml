@@ -14,6 +14,9 @@
         android:theme="@style/Theme.Trigris_Android"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".feature.find.FindActivity"
+            android:exported="false" />
+        <activity
             android:name=".feature.register.ui.AddressActivity"
             android:exported="false" />
         <activity
