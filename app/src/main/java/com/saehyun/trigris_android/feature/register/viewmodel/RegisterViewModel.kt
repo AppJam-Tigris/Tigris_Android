@@ -3,6 +3,8 @@ package com.saehyun.trigris_android.feature.register.viewmodel
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.saehyun.trigris_android.data.register.RegisterRepository
+import com.saehyun.trigris_android.feature.register.model.Location
+import com.saehyun.trigris_android.feature.register.model.RegisterRequest
 
 class RegisterViewModel(
     private val rp: RegisterRepository
@@ -14,8 +16,9 @@ class RegisterViewModel(
     val checkSuccess : MutableLiveData<Boolean> = MutableLiveData()
     val checkFailed : MutableLiveData<Boolean> = MutableLiveData()
 
-    fun register(nickname: String, name: String) {
-        val registerRequest = RegisterRequest(nickname, name)
+    fun register(name: String, phoneNumber: String, birthDay: String, gender: String, nationality: String,
+                 location: Location, uid: String, password: String) {
+        val registerRequest = RegisterRequest(name, phoneNumber, birthDay, gender, nationality, location, uid, password)
         rp.register(registerRequest).subscribe { response ->
             if(response.isSuccessful) {
                 success.value = true
