@@ -33,6 +33,12 @@ class LoginActivity : BaseActivity<ActivityLoginBinding> (
     }
 
     override fun observeEvent() {
+        vm.run {
+            success.observe(this@LoginActivity, {
+                showToast("로그인에 성공했습니다.")
+                startMain()
+            })
+        }
     }
 
     private fun login() {
@@ -40,8 +46,8 @@ class LoginActivity : BaseActivity<ActivityLoginBinding> (
         val pw = binding.etLoginPw.text.toString()
 
         if(id.isNotEmpty() && pw.isNotEmpty()) {
-//            vm.login(LoginRequest(id, pw)
-            startMain()
+            vm.login(LoginRequest(id, pw))
+//            startMain()
         } else {
             showToast("아이디 또는 비밀번호를 입력해주세요.")
         }
