@@ -16,12 +16,12 @@ class StartActivity : BaseActivity<ActivityStartBinding> (
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
 
-        startActivity(Intent(this, MainActivity::class.java))
+        startLogin()
     }
 
     override fun observeEvent() {}
 
     private fun startLogin() {
-        startActivity(Intent(this, LoginActivity::class.java))
+        startActivity(Intent(applicationContext, LoginActivity::class.java))
     }
 }
