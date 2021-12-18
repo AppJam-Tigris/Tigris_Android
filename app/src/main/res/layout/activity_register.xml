@@ -13,8 +13,163 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".feature.register.ui.RegisterActivity">
+        tools:context=".feature.login.ui.LoginActivity">
 
+
+        <ImageView
+            android:id="@+id/simageView"
+            android:layout_width="9dp"
+            android:layout_height="15dp"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="15dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/stextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:text="ghldnjsrkdlq"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/stextView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/noto_sans_kr_bold"
+            android:text="COVIN"
+            android:textColor="#213E5C"
+            android:textSize="36dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.502"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stextView" />
+
+        <TextView
+            android:id="@+id/stextView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:fontFamily="@font/noto_sans_kr_medium"
+            android:text="편리한 코로나 선별진료"
+            android:textColor="#366799"
+            android:textSize="14dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/stextView2" />
+
+        <EditText
+            android:id="@+id/etetRegisterThird"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+            android:textColorHint="#707070"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etetRegisterSecond" />
+
+        <EditText
+            android:id="@+id/etetRegisterSecond"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+            android:textColorHint="#707070"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etRegisterFIrst" />
+
+        <EditText
+            android:id="@+id/etRegisterFIrst"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:hint="Email"
+            android:paddingLeft="20dp"
+            android:textColorHint="#707070"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/stextView3" />
+
+        <EditText
+            android:id="@+id/etRegisterFourth"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="36dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="36dp"
+            android:fontFamily="@font/noto_sans_kr_regular"
+            android:hint="PASSWORD"
+            android:inputType="textPassword"
+            android:paddingLeft="20dp"
+            android:textColorHint="#707070"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etetRegisterThird" />
+
+        <ImageView
+            android:id="@+id/simageView2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="@+id/etRegisterFourth"
+            app:layout_constraintEnd_toEndOf="@+id/etRegisterFourth"
+            app:layout_constraintTop_toTopOf="@+id/etRegisterFourth"
+            app:srcCompat="@drawable/iv_see" />
+
+
+        <View
+            android:id="@+id/sview2"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="152dp"
+            android:background="@drawable/bg_register_btn_border"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/stvRegister"
+            android:layout_width="285dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/noto_sans_kr_medium"
+            android:gravity="center"
+            android:text="회원가입"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/sview2"
+            app:layout_constraintEnd_toEndOf="@+id/sview2" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </layout>
