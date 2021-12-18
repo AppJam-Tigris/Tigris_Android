@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="local">
+    <string-array name="gender">
         <item>내국인</item>
         <item>외국인</item>
+    </string-array>
+    <string-array name="nation">
+        <item>남자</item>
+        <item>여자</item>
     </string-array>
 </resources>
