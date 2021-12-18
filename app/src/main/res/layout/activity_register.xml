@@ -70,7 +70,7 @@
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="12dp"
             android:layout_marginEnd="35dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
@@ -82,7 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="16dp"
-                android:entries="@array/local"
+                android:entries="@array/nation"
                 android:textSize="8dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -91,6 +91,57 @@
 
             <TextView
                 android:id="@+id/tvSpinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:fontFamily="@font/noto_sans_kr_regular"
+                android:text="Nationality(국적)"
+                android:textColor="#707070"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.533" />
+
+            <View
+                android:id="@+id/v2Spinner"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="4dp"
+                android:background="#707070"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/spinner_nationality"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="35dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etRegisterFirst">
+
+            <Spinner
+                android:id="@+id/btnNation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/gender"
+                android:textSize="8dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.615" />
+
+            <TextView
+                android:id="@+id/tvNation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="16dp"
@@ -212,26 +263,26 @@
             android:layout_width="0dp"
             android:layout_height="40dp"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="68dp"
             android:layout_marginEnd="35dp"
+            android:layout_marginBottom="96dp"
             android:background="@drawable/bg_register_btn_border"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/etRegisterFourth" />
+            app:layout_constraintStart_toStartOf="parent" />
 
         <TextView
             android:id="@+id/stvRegister"
             android:layout_width="285dp"
             android:layout_height="38dp"
-            android:layout_marginEnd="4dp"
             android:fontFamily="@font/noto_sans_kr_medium"
             android:gravity="center"
             android:text="회원가입"
             android:textColor="#FFFFFF"
             android:textSize="14dp"
             app:layout_constraintBottom_toBottomOf="@+id/sview2"
-            app:layout_constraintEnd_toEndOf="@+id/sview2" />
+            app:layout_constraintEnd_toEndOf="@+id/sview2"
+            app:layout_constraintStart_toStartOf="@+id/sview2" />
 
         <TextView
             android:id="@+id/btnRegisterSecond"
