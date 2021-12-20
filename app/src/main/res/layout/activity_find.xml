@@ -7,13 +7,13 @@
     <data>
         <variable
             name="activity"
-            type="com.saehyun.trigris_android.feature.find.FindActivity" />
+            type="com.saehyun.trigris_android.feature.find.ui.FindActivity" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".feature.find.FindActivity">
+        tools:context=".feature.find.ui.FindActivity">
 
         <EditText
             android:id="@+id/editText"

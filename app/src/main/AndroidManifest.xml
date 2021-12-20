@@ -23,7 +23,7 @@
             android:name=".feature.reserve.ReserveActivity"
             android:exported="false" />
         <activity
-            android:name=".feature.find.FindActivity"
+            android:name=".feature.find.ui.FindActivity"
             android:exported="false" />
         <activity
             android:name=".feature.register.ui.AddressActivity"

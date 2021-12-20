@@ -1,4 +1,4 @@
-package com.saehyun.trigris_android.feature.find
+package com.saehyun.trigris_android.feature.find.ui
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,7 +8,9 @@ import com.example.nms_android_v1.base.BaseActivity
 import com.saehyun.trigris_android.R
 import com.saehyun.trigris_android.databinding.ActivityFindBinding
 import com.saehyun.trigris_android.feature.document.DocumentActivity
+import com.saehyun.trigris_android.feature.find.adapter.ClinicAdapter
 import com.saehyun.trigris_android.feature.find.model.ClinicResponseItem
+import com.saehyun.trigris_android.feature.find.viewmodel.FindViewModel
 import io.reactivex.rxjava3.exceptions.UndeliverableException
 import io.reactivex.rxjava3.plugins.RxJavaPlugins
 import org.koin.androidx.viewmodel.ext.android.viewModel

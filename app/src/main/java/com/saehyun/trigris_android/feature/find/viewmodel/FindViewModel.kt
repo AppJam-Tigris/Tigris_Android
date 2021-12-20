@@ -1,4 +1,4 @@
-package com.saehyun.trigris_android.feature.find
+package com.saehyun.trigris_android.feature.find.viewmodel
 
 import ACCESS_TOKEN
 import REFRESH_TOKEN
