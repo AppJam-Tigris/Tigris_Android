@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import com.saehyun.trigris_android.R
+import com.saehyun.trigris_android.feature.finish.FinishActivity
 
 class DocumentActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

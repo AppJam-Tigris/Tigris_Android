@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.saehyun.trigris_android.R
 import com.saehyun.trigris_android.feature.document.DocumentActivity
 import com.saehyun.trigris_android.feature.find.model.ClinicResponseItem
+import hospital
 
 class ClinicAdapter(val context: Context, val productData: List<ClinicResponseItem>):
     RecyclerView.Adapter<ClinicAdapter.Holder>() {
@@ -41,6 +42,7 @@ class ClinicAdapter(val context: Context, val productData: List<ClinicResponseIt
 
         holder.cl?.setOnClickListener {
             var intent = Intent(holder.itemView.context, DocumentActivity::class.java)
+            hospital = data.name
             intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
             ContextCompat.startActivity(holder.itemView.context, intent, null)
         }

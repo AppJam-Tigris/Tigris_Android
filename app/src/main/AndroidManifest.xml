@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Trigris_Android"
         android:usesCleartextTraffic="true" >
         <activity
-            android:name=".feature.document.FinishActivity"
+            android:name=".feature.finish.FinishActivity"
             android:exported="false" />
         <activity
             android:name=".feature.document.DocumentActivity"
